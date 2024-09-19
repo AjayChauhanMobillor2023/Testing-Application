@@ -2,8 +2,12 @@
 plugins {
         id("com.android.library")
         id("org.jetbrains.kotlin.android")
+        id ("maven-publish")
 
 }
+
+group = "com.github.AjayChauhanMobillor2023"  // Use your GitHub username
+version = "1.0.0"                  // Version of your library
 
 android {
         namespace = "com.example.toastertoast"
