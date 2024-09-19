@@ -55,9 +55,9 @@ publishing{
                 register<MavenPublication>("release"){
                         afterEvaluate{
                                 from (components["release"])
-                                        groupId ="com.github.AjayChauhanMobillor2023" // GitHub username
-                                artifactId = "Toaster-Toast "      // GitHub repository name
-                                version = "1.0.3"
+//                                        groupId ="com.github.AjayChauhanMobillor2023" // GitHub username
+//                                artifactId = "Testing-Application"      // GitHub repository name
+//                                version = "1.0.3"
                         }
                 }
         }
