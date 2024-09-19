@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.github.AjayChauhanMobillor2023"  // Use your GitHub username
-version = "1.0.5"                  // Version of your library
+version = "1.0.6"                  // Version of your library
 
 android {
         namespace = "com.example.toastertoast"
