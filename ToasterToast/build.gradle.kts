@@ -46,3 +46,19 @@ dependencies {
         androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
         implementation ("com.google.android.material:material:1.12.0")
 }
+
+
+//afterEvaluate {
+//        publishing {
+//                publications {
+//                        // Creates a Maven publication called "release".
+//                        release(MavenPublication) {
+//                                from components.release
+//                                        groupId ="com.github.AjayChauhanMobillor2023" // GitHub username
+//                                artifactId = "Toaster-Toast "      // GitHub repository name
+//                                version = "1.0.0"
+//                        }
+//                }
+//        }
+//}
+
