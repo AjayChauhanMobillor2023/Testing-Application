@@ -32,8 +32,7 @@ android {
         kotlinOptions {
                 jvmTarget = "1.8"
         }
-        group = "com.github.AjayChauhanMobillor2023"  // Use your GitHub username
-        version = "1.0.0"                  // Version of your library
+
 
 }
 
