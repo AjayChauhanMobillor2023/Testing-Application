@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.github.AjayChauhanMobillor2023"  // Use your GitHub username
-version = "1.0.0"                  // Version of your library
+version = "1.0.3"                  // Version of your library
 
 android {
         namespace = "com.example.toastertoast"
@@ -50,16 +50,27 @@ dependencies {
         implementation ("com.google.android.material:material:1.12.0")
 }
 
+publishing{
+        publications{
+                register<MavenPublication>("release"){
+                        afterEvaluate{
+                                from (components["release"])
+                                        groupId ="com.github.AjayChauhanMobillor2023" // GitHub username
+                                artifactId = "Toaster-Toast "      // GitHub repository name
+                                version = "1.0.3"
+                        }
+                }
+        }
+}
+
+
 
 //afterEvaluate {
 //        publishing {
 //                publications {
 //                        // Creates a Maven publication called "release".
-//                        release(MavenPublication) {
-//                                from components.release
-//                                        groupId ="com.github.AjayChauhanMobillor2023" // GitHub username
-//                                artifactId = "Toaster-Toast "      // GitHub repository name
-//                                version = "1.0.0"
+//                        bon(MavenPublication) {
+//
 //                        }
 //                }
 //        }
